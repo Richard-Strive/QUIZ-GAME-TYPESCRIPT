@@ -1,0 +1,13 @@
+This is my first edited read me:
+
+TO GET STARTED :
+
+- CLONE THE REPO
+
+- FIND AND OPEN THE FILE
+
+- OPEN YOUR TERMINAL AND WRITE - cd my-app-
+
+- NPM I
+
+- AND AT THE END LAUNCH THE APP RUNNING NPM START
