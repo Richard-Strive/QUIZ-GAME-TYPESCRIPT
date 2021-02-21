@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import QuestionCards from "./Components/QuestionCards";
 import {fetchQuizQuestions, Difficulty, QuestionState} from "./API"
 
+import{GlobalStyle} from "./App.styles"
+
 export type AnswerObject={
   question:string,
   answer:string,
@@ -86,6 +88,8 @@ function App() {
 
   return (
     <div className="App">
+      <>
+      <GlobalStyle/>
       <h1>WELCOME TO MY QUIZ GAME</h1>
      {gameOver||userAnswers.length===TOTAL_QUESTIONS? (<button className="start" onClick={StartTrivia}>
         Start the game
@@ -107,6 +111,7 @@ function App() {
       </button>)
     :null
     }
+    </>
     </div>
   );
 }
